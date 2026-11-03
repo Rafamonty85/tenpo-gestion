@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tenpo Gestión</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0a0d12">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <style>
+    html, body { margin: 0; height: 100%; background: #0a0d12; overflow: hidden; }
+    iframe { border: 0; width: 100%; height: 100%; display: block; background: #0a0d12; }
+  </style>
+</head>
+<body>
+  <!-- Tu app de Tenpo Gestión (Apps Script), sin cambios -->
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbyVQ0NUxuLT9rHhi-mCqiP6i_RVJnl2Tk02udlzhs05hLQSg1NNDprbDUHX8lp_qg/exec"
+    title="Tenpo Gestión"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js');
+      });
+    }
+  </script>
+</body>
+</html>
